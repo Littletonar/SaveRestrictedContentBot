@@ -89,7 +89,7 @@ async def run_batch(userbot, client, sender, link, _range):
             if i < 25:
                 timer = 2
             else:
-                timer = 3
+                timer = 10
         try:
             await get_bulk_msg(userbot, client, sender, link, i) 
         except FloodWait as fw:
